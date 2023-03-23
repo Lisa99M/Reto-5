@@ -61,3 +61,29 @@ En acción para 89 y attack:
 [![2023-03-22-6.png](https://i.postimg.cc/MGFZ8tRb/2023-03-22-6.png)](https://postimg.cc/5H8WBBs6)
 
 [![2023-03-22-7.png](https://i.postimg.cc/7ZXYKqZR/2023-03-22-7.png)](https://postimg.cc/NK9cMqT8)
+
+5. Para el problema 5 primeramente se declaran y se le asigna un valor a las variables correspoondientes a las coordenadas del centro del círculo, el punto R2 y el valor del radio. Luego para calcular si R2 se encuentra dentro de la circunferencia debe de rpobarse que la distancia entre el punto y el centro es igual o menor al radio. Para ello se emplea el teorema de Pitágorás. 
+ Código:
+ ```
+ #Programa que, dado el centro y el radio de un círculo, determina si un punto de R2 pertenece o no al interior del círculo.
+centrox: float
+centroy: float
+R2x: float
+R2y: float
+radio: float
+
+centrox = float(input("Insertar valor de la coordenada  x del centro del círculo"))
+centroy = float(input("Insertar valor de la coordenada y del centro del círculo"))
+R2x = float(input("Insertar valor de la coorenada x del punto R2"))
+R2y = float(input("Insertar valor de la coordenada y del punto R2"))
+radio = float(input("Insertar valor del radio del círculo"))
+
+if radio >= ((R2x - centrox)**2 + (R2y - centroy)**2)**0.5:
+    print("El punto " + str(R2x) + "," + str(R2y) + " pertenece al circulo de centro " + str(centrox) + ", " + str(centroy) + " y radio " + str(radio))
+else:
+    print("El punto " + str(R2x) + "," + str(R2y) + " no pertenece al circulo de centro " + str(centrox) + ", " + str(centroy) + " y radio " + str(radio))
+```
+    
+En acción  para Pto R2 = (0,3) Radio = 10 y centro = (0,0): 
+
+[![2023-03-22-8.png](https://i.postimg.cc/sXt68VCz/2023-03-22-8.png)](https://postimg.cc/R6LLJx0p)
