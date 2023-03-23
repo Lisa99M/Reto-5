@@ -110,4 +110,4 @@ En acción para 3, 4 y 10:
 
 [![2023-03-22-9.png](https://i.postimg.cc/6q43WfPR/2023-03-22-9.png)](https://postimg.cc/GTrrzGdh)
 
-_Y colorín colorado, este repo se ha acabado. _ 
+*Y colorín colorado, este repo se ha acabado.*
