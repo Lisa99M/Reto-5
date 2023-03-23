@@ -87,3 +87,27 @@ else:
 En acción  para Pto R2 = (0,3) Radio = 10 y centro = (0,0): 
 
 [![2023-03-22-8.png](https://i.postimg.cc/sXt68VCz/2023-03-22-8.png)](https://postimg.cc/R6LLJx0p)
+
+6. En este punto era necesario aplicar el teorema de la desigualdad triangular. Por lo tanto para saber si con tres longitudes se puede construir un triángulo, lueg o de asignarle los valores a las variables declaradas como catetos e hipotenusa, se hace una suma de los catetos y se compara con el valor de la hipotenusa. Si la suma es mayor se imprime "Con las longitudes " + str(c1) + " ," + str(c2) + " y " + str(h) + " es posible construir un triángulo", en el caso contrario no se puede construir el triángulo y el programa imprime el mensaje "Con las longitudes " + str(c1) + " ," + str(c2) + " y " + str(h) + " no es posible construir un triángulo".
+
+Código: 
+```
+#Programa que, dadas tres longitudes positivas, determina si con esas longitudes se puede construir un triángulo.
+c1: float
+c2: float
+h: float
+
+c1 = float(input("Insertar valor del cateto 1"))
+c2 = float(input("Insertar valor del cateto 2"))
+h = float(input("Insertar valor de la hipotenusa"))
+
+if c1 + c2 > h :
+    print("Con las longitudes " + str(c1) + " ," + str(c2) + " y " + str(h) + " es posible construir un triángulo")
+else:
+    print("Con las longitudes " + str(c1) + " ," + str(c2) + " y " + str(h) + " no es posible construir un triángulo")
+```
+En acción para 3, 4 y 10:
+
+[![2023-03-22-9.png](https://i.postimg.cc/6q43WfPR/2023-03-22-9.png)](https://postimg.cc/GTrrzGdh)
+
+_Y colorín colorado, este repo se ha acabado. _ 
